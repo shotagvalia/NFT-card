@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-family: outfit;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d192c;
+}
+.card {
+  width: 350px;
+  padding: 24px;
+  background-color: #15263f;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+.main-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.heading {
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 24px;
+}
+.heading:hover {
+  color: #00fff8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.description {
+  color: #8bacd9;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 16px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.eth {
+  display: flex;
+  align-items: center;
+  gap: 6.485px;
+  color: #00fff8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  gap: 7.7px;
+  color: #8bacd9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+hr {
+  margin-top: 24px;
+  background-color: #2e405a;
+  height: 1px;
+  border: none;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.author-image {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.info {
+  color: #8bacd9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.info span {
+  color: #fff;
+}
+.info span:hover {
+  color: #00fff8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.overlay {
+  width: 302px;
+  height: 302px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.overlay:hover::before {
+  content: "";
+  background-image: url(./assets/Eye.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.503);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 327px;
+    padding-right: 25px;
+  }
+  .overlay {
+    width: 277px;
+    height: 277px;
+    cursor: default;
+  }
+  .overlay:hover::before {
+    background: none;
+  }
+  .heading:hover {
+    color: #fff;
+    cursor: default;
+  }
+  .description {
+    margin-top: 12px;
+  }
+  .details {
+    margin-top: 16px;
+  }
+  .hr {
+    margin-top: 16px;
+  }
+  .author {
+    margin-top: 23px;
+  }
+  .eth span {
+    font-size: 15px;
+  }
+  .clock span {
+    font-size: 15px;
+  }
+  .info {
+    font-size: 15px;
+  }
+  .info span:hover {
+    cursor: default;
+    color: #fff;
+  }
+}
